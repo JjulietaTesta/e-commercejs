@@ -1,0 +1,26 @@
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+.btn-carrito {
+    background-color: rgb(132, 190, 154);
+    border-color: rgb(31, 80, 57);
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn-agregar{
+    background-color: rgb(132, 190, 154);
+    border-color: rgb(31, 80, 57);
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(147, 212, 191);
+}
+
+.navbar-color {
+    background-color: rgb(27, 128, 94);
+}
