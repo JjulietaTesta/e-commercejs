@@ -34,13 +34,38 @@ const productos = [  // ARRAY DE PRODUCTOS
         precio: 6780,
         imagen: 'https://http2.mlstatic.com/D_NQ_NP_918419-MLA45059722076_032021-W.jpg'
     },
+    {
+        id: 6,
+        nombre: 'The Doors',
+        cantidad: 8,
+        precio: 7500,
+        imagen: 'https://images-eu.ssl-images-amazon.com/images/I/41Tq-hc-t0L._AC_UL750_SR750,750_.jpg'
+    },
+    {
+        id: 7,
+        nombre: 'Interpol',
+        cantidad: 14,
+        precio: 8600,
+        imagen: 'https://http2.mlstatic.com/D_NQ_NP_763996-MLA52006628176_102022-W.jpg'
+    },
+    {
+        id: 8,
+        nombre: 'Tame Impala',
+        cantidad: 23,
+        precio: 6300,
+        imagen: 'https://http2.mlstatic.com/D_NQ_NP_751703-MLA51952181562_102022-O.jpg'
+    },
+
+
+
 ];
 
 const contenedor = document.getElementById('contenedor'); 
 const inputSearch = document.getElementById('input-search');
 const contenedorCarrito = document.getElementById('contenedor-carrito');
 const textoDolar = document.getElementById('precio-dolar');
-const btnRebajas = document.getElementById('btn-rebajas');
+
+
 
 
 
@@ -53,31 +78,6 @@ const mostrarDolar = () => {
         textoDolar.innerText = `Dolar oficial: Compra $${oficial?.casa.compra} - Venta $${oficial?.casa.venta}`
     });
 }
-
-
-const rebajas = 7000;
-const productosRebajados = productos.filter((el) => el.precio < rebajas);
-
-const listarRebajas = (productosRebajados) => {
-    let acumulador = '';
-
-    productosRebajados.forEach((producto) => {
-        acumulador += `
-            <tr>
-                    <td>${producto.id}</td>
-                    <td>${producto.nombre}</td>
-                    <td>$${producto.precio}</td>
-                    <td>${producto.cantidad}</td>
-                    <td>$${producto.total}</td>
-            </tr>
-        
-        `
-    })
-
-    contenedorCarrito.innerHTML = acumulador;
-
-}
-
 
 let carrito = []; // ARRAY DE CARRITO DE COMPRAS
 
@@ -147,7 +147,7 @@ const dibujarVinilos = (productos, contenedor) => {
             <h5 class="card-title">${element.nombre}</h5>
             <p class="card-text">Cantidad disponible: ${element.cantidad}</p>
             <p class="card-text">Precio: $ ${element.precio}</p>
-            <a href="#" onclick="agregarAlCarrito(${element.id})" class="btn btn-primary">Agregar al carrito</a>
+            <a href="#" onclick="agregarAlCarrito(${element.id})" class="btn btn-primary btn-agregar">Agregar al carrito</a>
         </div>
         </div>
         `
@@ -203,5 +203,5 @@ if (localStorage.getItem('carrito')) { // RECUPERAR CARRITO GUARDADO EN EL STORA
 mostrarDolar();
 
 inputSearch.addEventListener('input', handleSearch);
-btnRebajas.addEventListener('click', listarRebajas);
+
 
