@@ -1,26 +1,65 @@
 h1 {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
 }
 
 .btn-carrito {
     background-color: rgb(132, 190, 154);
     border-color: rgb(31, 80, 57);
     color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .btn-agregar{
     background-color: rgb(132, 190, 154);
     border-color: rgb(31, 80, 57);
     color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-color: rgb(147, 212, 191);
+.filtro {
+    background-color: rgb(130, 201, 177);
 }
 
-.navbar-color {
-    background-color: rgb(27, 128, 94);
+#contenedor {
+    margin-top: 2%;
+}
+
+.tuCarrito {
+    display: flex;
+    justify-content: center;
+}
+
+.textoCarrito {
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-secondary {
+    background-color: rgb(132, 190, 154);
+    border-color: rgb(31, 80, 57);
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+.btn-pagar {
+background-color: rgb(132, 190, 154);
+border-color: rgb(31, 80, 57);
+color: black;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.barraNav {
+    display: flex;
+    justify-content: space-between;
+    
 }

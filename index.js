@@ -141,7 +141,7 @@ const dibujarVinilos = (productos, contenedor) => {
 
     productos.forEach(element => {
         acumulador += `
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem; border-color: rgb(130, 201, 177)">
             <img src="${element.imagen}" class="card-img-top" alt="${element.nombre}">
         <div class="card-body">
             <h5 class="card-title">${element.nombre}</h5>
@@ -162,7 +162,7 @@ dibujarVinilos(productos, contenedor);
 
 
 //TOAST
-const colores = ['Lavender', 'Thistle', 'Plum', 'Violet', 'Orchid']; 
+const colores = ['LimeGreen', 'LightGreen', 'SpringGreen', 'ForestGreen', 'YellowGreen'];
 const nombres = ['Julieta', 'Lucila', 'Marcos', 'Emanuel', 'Patricia'];
 const bandas = ['Arctic Monkeys', 'Kings of Leon', 'Blur', 'The Strokes', 'Gorillaz'];
 const toast = (nombre, tiempo, color, banda) => Toastify({
